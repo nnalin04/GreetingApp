@@ -39,7 +39,7 @@ public class GreetingServiceTest {
         Assertions.assertEquals("Message Successfully Saved", message);
     }
 
-    /*@Test
+    @Test
     public void givenEditedData_WhenUpdated_ShouldReturnSuccessFull() {
         GreetingMessage greetingMessage = new GreetingMessage();
         greetingMessage.setGreetingId(123L);
@@ -49,12 +49,5 @@ public class GreetingServiceTest {
         when(greetingRepository.findById(anyLong())).thenReturn(java.util.Optional.of(greetingMessage));
         String message = service.updateMessage(greetingDTO);
         Assertions.assertEquals("Message Successfully Updated", message);
-    }*/
-
-    @Test
-    public void givenUserId_WhenCalled_ShouldReturnGreetingMessage() {
-        GreetingMessage greetingMessage = new GreetingMessage();
-            when(greetingRepository.findById(any())).thenReturn(any());
-            service.findMessageById(greetingMessage.getGreetingId());
     }
 }

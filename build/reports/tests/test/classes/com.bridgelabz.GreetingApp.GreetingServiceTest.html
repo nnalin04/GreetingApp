@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">4</div>
+<div class="counter">3</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.168s</div>
+<div class="counter">0.113s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">75%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,120 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="givenUserId_WhenCalled_ShouldReturnGreetingMessage()"></a>
-<h3 class="failures">givenUserId_WhenCalled_ShouldReturnGreetingMessage()</h3>
-<span class="code">
-<pre>java.lang.NullPointerException
-	at com.bridgelabz.GreetingApp.service.GreetingService.findMessageById(GreetingService.java:49)
-	at com.bridgelabz.GreetingApp.GreetingServiceTest.givenUserId_WhenCalled_ShouldReturnGreetingMessage(GreetingServiceTest.java:58)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -191,40 +87,35 @@
 </tr>
 <tr>
 <td class="success">givenEditedData_WhenUpdated_ShouldReturnSuccessFull()</td>
-<td class="success">0.138s</td>
+<td class="success">0.091s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenUserDTO_WhenSaved_ShouldReturnSuccessFull()</td>
-<td class="success">0.008s</td>
+<td class="success">0.013s</td>
 <td class="success">passed</td>
-</tr>
-<tr>
-<td class="failures">givenUserId_WhenCalled_ShouldReturnGreetingMessage()</td>
-<td class="failures">0.013s</td>
-<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>23:38:05.494 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-23:38:05.557 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-23:38:05.689 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.bridgelabz.GreetingApp.GreetingServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-23:38:05.724 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bridgelabz.GreetingApp.GreetingServiceTest], using SpringBootContextLoader
-23:38:05.732 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.bridgelabz.GreetingApp.GreetingServiceTest]: class path resource [com/bridgelabz/GreetingApp/GreetingServiceTest-context.xml] does not exist
-23:38:05.734 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.bridgelabz.GreetingApp.GreetingServiceTest]: class path resource [com/bridgelabz/GreetingApp/GreetingServiceTestContext.groovy] does not exist
-23:38:05.737 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bridgelabz.GreetingApp.GreetingServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-23:38:05.743 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bridgelabz.GreetingApp.GreetingServiceTest]: GreetingServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:38:05.844 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.bridgelabz.GreetingApp.GreetingServiceTest]
-23:38:05.986 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\Fellowship\UserGreatingApp\GreetingApp\build\classes\java\main\com\bridgelabz\GreetingApp\GreetingAppApplication.class]
-23:38:06.002 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bridgelabz.GreetingApp.GreetingAppApplication for test class com.bridgelabz.GreetingApp.GreetingServiceTest
-23:38:06.214 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.bridgelabz.GreetingApp.GreetingServiceTest]: using defaults.
-23:38:06.216 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-23:38:06.268 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@b0f9193, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78a58b7a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@228a76a4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@26742a44, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5180b410, org.springframework.test.context.transaction.TransactionalTestExecutionListener@52a0b01, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@74647256, org.springframework.test.context.event.EventPublishingTestExecutionListener@73454094, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@27b14ad8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@72163f2c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@253715fa, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7cafb028, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@51e5c2ef, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@124978a0]
-23:38:06.281 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@47b22a61 testClass = GreetingServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@71599863 testClass = GreetingServiceTest, locations = '{}', classes = '{class com.bridgelabz.GreetingApp.GreetingAppApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@650b4da6, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@686f3c9e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3bc366b3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@92e2902, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7b99ccd1, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@706f4d59], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
-23:38:06.340 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+<pre>23:56:16.319 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:56:16.380 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:56:16.510 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.bridgelabz.GreetingApp.GreetingServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:56:16.548 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bridgelabz.GreetingApp.GreetingServiceTest], using SpringBootContextLoader
+23:56:16.563 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.bridgelabz.GreetingApp.GreetingServiceTest]: class path resource [com/bridgelabz/GreetingApp/GreetingServiceTest-context.xml] does not exist
+23:56:16.565 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.bridgelabz.GreetingApp.GreetingServiceTest]: class path resource [com/bridgelabz/GreetingApp/GreetingServiceTestContext.groovy] does not exist
+23:56:16.569 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bridgelabz.GreetingApp.GreetingServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:56:16.574 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bridgelabz.GreetingApp.GreetingServiceTest]: GreetingServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:56:16.707 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.bridgelabz.GreetingApp.GreetingServiceTest]
+23:56:16.821 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\Fellowship\UserGreatingApp\GreetingApp\build\classes\java\main\com\bridgelabz\GreetingApp\GreetingAppApplication.class]
+23:56:16.821 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bridgelabz.GreetingApp.GreetingAppApplication for test class com.bridgelabz.GreetingApp.GreetingServiceTest
+23:56:17.024 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.bridgelabz.GreetingApp.GreetingServiceTest]: using defaults.
+23:56:17.024 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:56:17.056 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29ec166b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@242acecd, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@64efeec9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@677ef92e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2ee8e4e4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5c460b52, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@47c43fb5, org.springframework.test.context.event.EventPublishingTestExecutionListener@57e309ea, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3ec51836, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@52b59827, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@34ea3c53, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7b89cf7d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6d9b7c92, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1311b5a6]
+23:56:17.071 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7e8f6618 testClass = GreetingServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7975af9d testClass = GreetingServiceTest, locations = '{}', classes = '{class com.bridgelabz.GreetingApp.GreetingAppApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@68d895a4, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@eab777b, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@79fafb56, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@758be282, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3928ec79, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@57190574], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+23:56:17.140 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -234,28 +125,28 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::       (v2.4.0-SNAPSHOT)
 
-2020-10-16 23:38:06.809  INFO 9364 --- [    Test worker] c.b.GreetingApp.GreetingServiceTest      : Starting GreetingServiceTest using Java 11.0.7 on EEE1407203 with PID 9364 (started by 1407162 in D:\Fellowship\UserGreatingApp\GreetingApp)
-2020-10-16 23:38:06.813  INFO 9364 --- [    Test worker] c.b.GreetingApp.GreetingServiceTest      : No active profile set, falling back to default profiles: default
-2020-10-16 23:38:09.115  INFO 9364 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-16 23:38:09.277  INFO 9364 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interfaces.
-2020-10-16 23:38:10.359  INFO 9364 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-16 23:38:10.493  INFO 9364 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-16 23:38:10.681  INFO 9364 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
-2020-10-16 23:38:11.155  INFO 9364 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-10-16 23:38:11.256  WARN 9364 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-16 23:38:11.470  INFO 9364 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-10-16 23:38:11.486  WARN 9364 --- [         task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2020-10-16 23:38:12.647  INFO 9364 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-10-16 23:38:12.942  INFO 9364 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-10-16 23:38:13.460  INFO 9364 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-10-16 23:38:15.405  INFO 9364 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-16 23:38:15.419  INFO 9364 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-16 23:38:15.753  INFO 9364 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-10-16 23:38:15.769  INFO 9364 --- [    Test worker] c.b.GreetingApp.GreetingServiceTest      : Started GreetingServiceTest in 9.42 seconds (JVM running for 12.914)
+2020-10-16 23:56:17.620  INFO 8364 --- [    Test worker] c.b.GreetingApp.GreetingServiceTest      : Starting GreetingServiceTest using Java 11.0.7 on EEE1407203 with PID 8364 (started by 1407162 in D:\Fellowship\UserGreatingApp\GreetingApp)
+2020-10-16 23:56:17.625  INFO 8364 --- [    Test worker] c.b.GreetingApp.GreetingServiceTest      : No active profile set, falling back to default profiles: default
+2020-10-16 23:56:19.009  INFO 8364 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-16 23:56:19.113  INFO 8364 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interfaces.
+2020-10-16 23:56:20.294  INFO 8364 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 23:56:20.457  INFO 8364 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-16 23:56:20.605  INFO 8364 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-10-16 23:56:21.104  INFO 8364 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-16 23:56:21.212  WARN 8364 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-16 23:56:21.447  INFO 8364 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-16 23:56:21.459  WARN 8364 --- [         task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-10-16 23:56:22.727  INFO 8364 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-16 23:56:22.836  INFO 8364 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-16 23:56:23.557  INFO 8364 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-16 23:56:24.724  INFO 8364 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-16 23:56:24.741  INFO 8364 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 23:56:25.054  INFO 8364 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-16 23:56:25.083  INFO 8364 --- [    Test worker] c.b.GreetingApp.GreetingServiceTest      : Started GreetingServiceTest in 7.933 seconds (JVM running for 10.38)
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
@@ -270,7 +161,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.6.1</a> at 16-Oct-2020, 11:38:16 PM</p>
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at 16-Oct-2020, 11:56:25 PM</p>
 </div>
 </div>
 </body>
